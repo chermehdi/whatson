@@ -69,6 +69,7 @@ public class CallbackGoogle extends HttpServlet {
             String lastName = nameObject.getString("familyName");
             String picUrl = profile.getJsonObject("image").getString("url");
             User user = authService.registerUserGoogle(new RegisterationRequest(firstName, lastName, email, picUrl, 0));
+            System.out.println("the user created is " + user);
             setSessionAttributes(req, user);
         } catch (Exception e) {
             e.printStackTrace();

@@ -5,4 +5,17 @@
     <param-name>google.client.id</param-name>
     <param-value>341317941001-8gqtt5r2so7hdtv9pfdf02bmhrdnc73e.apps.googleusercontent.com</param-value>
   </context-param>
+  <context-param>
+    <param-name>google.client.secret</param-name>
+    <param-value>Atrw2Cer3GzHNw8Uo_V9etJD</param-value>
+  </context-param>
+  <context-param>
+    <param-name>google.callback.url</param-name>
+    <param-value>http://localhost:8080/whatson/google-callback</param-value>
+  </context-param>
+<context-param>
+    <param-name>google.login.path</param-name>
+    <param-value>https://www.googleapis.com/plus/v1/people/me</param-value>
+  </context-param>
+
 </web-app>

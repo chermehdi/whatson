@@ -10,8 +10,13 @@
             <!-- signup/form -->
             <div class="row">
                 <div class="col-md-12 social-container">
-                    <button class="btn btn-social blue"><i class="zmdi zmdi-facebook"></i> facebook</button>
-                    <button class="btn btn-social red" id="google"><i class="zmdi zmdi-google"></i> google</button>
+                    <form action="<c:url value="/facebook"/>" method="post">
+                        <button type="submit" class="btn btn-social blue"><i class="zmdi zmdi-facebook"></i> facebook
+                        </button>
+                    </form>
+                    <form action="<c:url value="/google"/>" method="post">
+                        <button class="btn btn-social red" id="google"><i class="zmdi zmdi-google"></i> google</button>
+                    </form>
                     <!--    <div class="g-signin2" data-width="300" data-onload="false" data-onsuccess="onSignIn"></div>-->
                 </div>
             </div>
@@ -38,7 +43,8 @@
                     <div class="col-md-6">
                         <button type="submit" class="btn btn-primary" style="width: 100%">Sign in</button>
                     </div>
-                    <div class="col-md-6"  style="text-align: right"><a href="<c:url value="/signup"/>"> don't have Account ? </a></div>
+                    <div class="col-md-6" style="text-align: right"><a href="<c:url value="/signup"/>"> don't have
+                        Account ? </a></div>
                 </div>
             </form>
         </div>
