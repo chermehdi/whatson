@@ -1,0 +1,86 @@
+
+body {
+    background: url('../img/micro.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+}
+
+.container.main {
+    margin-top: 70px;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-brand > img {
+    height: 100%;
+    padding: 0px;
+    width: 40px;
+}
+
+.btn-social.btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 1.1em;
+    padding: 8px;
+    width: 49%;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.btn.btn-social.red {
+    background-color: #da4b3e;
+}
+
+.btn.btn-social.blue {
+    background-color: #4468B0;
+}
+
+.btn-social > :first-child {
+    position: absolute;
+    left: 2%;
+    top: -5%;
+    line-height: 44px;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+}
+
+.social-container {
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+
+.lead.big-text {
+    margin-top: 10px;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.smaller-text {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+.nav-item > a.nav-link.nav-link-blue {
+    color: #2B32AF;
+}
+
+.nav-item.active > a.nav-link.nav-link-blue {
+    color: #090c40d1;
+}
