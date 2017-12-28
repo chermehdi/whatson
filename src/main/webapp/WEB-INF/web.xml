@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
-  <display-name>whatson</display-name>
-  <context-param>
-    <param-name>google.client.id</param-name>
-    <param-value>341317941001-8gqtt5r2so7hdtv9pfdf02bmhrdnc73e.apps.googleusercontent.com</param-value>
-  </context-param>
-  <context-param>
-    <param-name>google.client.secret</param-name>
-    <param-value>Atrw2Cer3GzHNw8Uo_V9etJD</param-value>
-  </context-param>
-  <context-param>
-    <param-name>google.callback.url</param-name>
-    <param-value>http://localhost:8080/whatson/google-callback</param-value>
-  </context-param>
-<context-param>
-    <param-name>google.login.path</param-name>
-    <param-value>https://www.googleapis.com/plus/v1/people/me</param-value>
-  </context-param>
-
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         id="WebApp_ID" version="3.1">
+    <display-name>whatson</display-name>
+    <context-param>
+        <param-name>google.client.id</param-name>
+        <param-value>341317941001-8gqtt5r2so7hdtv9pfdf02bmhrdnc73e.apps.googleusercontent.com</param-value>
+    </context-param>
+    <context-param>
+        <param-name>google.client.secret</param-name>
+        <param-value>Atrw2Cer3GzHNw8Uo_V9etJD</param-value>
+    </context-param>
+    <context-param>
+        <param-name>google.callback.url</param-name>
+        <param-value>http://localhost:8080/whatson/google-callback</param-value>
+    </context-param>
+    <context-param>
+        <param-name>google.login.path</param-name>
+        <param-value>https://www.googleapis.com/plus/v1/people/me</param-value>
+    </context-param>
+    <context-param>
+        <param-name>facebook.client.id</param-name>
+        <param-value>861686407322995</param-value>
+    </context-param>
+    <context-param>
+        <param-name>facebook.client.secret</param-name>
+        <param-value>d6a6e1115a51c3ac778510f5ca971a46</param-value>
+    </context-param>
+    <context-param>
+        <param-name>facebook.callback.url</param-name>
+        <param-value>http://localhost:8080/whatson/facebook-callback</param-value>
+    </context-param>
+    <context-param>
+        <param-name>facebook.login.path</param-name>
+        <param-value>https://graph.facebook.com/v2.11/me?fields=id,name,email,picture</param-value>
+    </context-param>
 </web-app>

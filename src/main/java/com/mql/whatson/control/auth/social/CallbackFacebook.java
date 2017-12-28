@@ -56,6 +56,7 @@ public class CallbackFacebook extends HttpServlet {
             final Response serviceResponse = service.execute(request);
             JsonReader reader = Json.createReader(new ByteArrayInputStream(serviceResponse.getBody().getBytes()));
             JsonObject profile = reader.readObject();
+            System.out.println("the profile " + profile);
             // TODO: call user factory to fabricate user object and test if it's login or register request
             String[] nameToken = profile.getString("name").split("\\s+");
             String firstName = nameToken[0];

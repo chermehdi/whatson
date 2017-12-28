@@ -1,5 +1,6 @@
 package com.mql.whatson.control;
 
+import com.mql.whatson.control.processor.TemplateProcessor;
 import com.mql.whatson.entity.RegisterationRequest;
 import com.mql.whatson.service.AuthService;
 
@@ -21,6 +22,10 @@ public class Signup extends HttpServlet {
     @Inject
     AuthService authService;
 
+    @Inject
+    TemplateProcessor processor;
+
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         RegisterationRequest registerationRequest = createRegistrationRequest(request);
         boolean registered = authService.registerUser(registerationRequest);
@@ -38,6 +43,10 @@ public class Signup extends HttpServlet {
         request.getRequestDispatcher("/WEB-INF/pages/signup.jsp").forward(request, response);
     }
 
+    /*protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setAttribute("home", "mehdi");
+        processor.process(request, response, getServletContext(), "test");
+    }*/
     private RegisterationRequest createRegistrationRequest(HttpServletRequest request) {
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");

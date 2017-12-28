@@ -32,6 +32,7 @@ public class FacebookLogin extends HttpServlet {
         final OAuth20Service service = new ServiceBuilder(CLIENT_ID)
                 .apiSecret(CLIENT_SECRET)
                 .state(STATE)
+                .scope("email")
                 .callback(CALLBACK_URL)
                 .build(FacebookApi.instance());
         HttpSession session = request.getSession();
