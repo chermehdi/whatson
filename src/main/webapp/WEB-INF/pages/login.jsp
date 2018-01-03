@@ -1,4 +1,7 @@
 <%@ include file="../partials/header.jsp" %>
+<link href="<c:url value="assets/css/bootstrap.min.css"/>" rel="stylesheet">
+<link href="<c:url value="assets/css/login.css" />" rel="stylesheet">
+<%@ include file="../partials/navigation.jsp" %>
 <div class="container main">
     <div class="row">
         <div class="col-md-7">

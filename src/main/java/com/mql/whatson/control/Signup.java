@@ -35,18 +35,19 @@ public class Signup extends HttpServlet {
             session.setAttribute("email", registerationRequest.getEmail());
             response.sendRedirect("/whatson/home");
         } else {
-            request.getRequestDispatcher("/WEB-INF/pages/signup.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/pages/register.jsp").forward(request, response);
         }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/pages/signup.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/pages/register.jsp").forward(request, response);
     }
 
     /*protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("home", "mehdi");
         processor.process(request, response, getServletContext(), "test");
     }*/
+
     private RegisterationRequest createRegistrationRequest(HttpServletRequest request) {
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
